@@ -160,7 +160,7 @@
                     </h2>
                     <span>A basic DataFrame, which can be created is an Empty Dataframe.
                     </span>
-                    <div class="code_view">
+                    <div class="code_view" onclick="Copytext(this)">
                         <pre><code class="python">import pandas as pd
 df =pd.DataFrame()
 print(df)</code></pre>
@@ -168,7 +168,7 @@ print(df)</code></pre>
                     <h2>Column Addition
                     </h2>
                     <span>We will understand this by adding column to an existing data frame.</span>
-                    <div class="code_view">
+                    <div class="code_view" onclick="Copytext(this)">
                         <pre><code class="python">import pandas as pd <br>
 df =pd.DataFrame()
 # Adding a column to an existing DataFrame
@@ -397,7 +397,7 @@ print(df)</code> </pre>
                             </ul>
                         </div>
                         <div class="ques"><br>Q4. What is the output of the following code:-
-                            <div class="code_view">
+                            <div class="code_view" onclick="Copytext(this)">
                                 <pre><code class="python">import pandas as pd
 Df = pd.DataFrame()
 Df["Numbers"] = np.arange(3)
@@ -520,6 +520,7 @@ print(Df)
                 </div>
             </div>
         </div>
+        <div id="snackbar">Text Copied</div>
     </section>
     <script src="dataFrame.js"></script>
     <script>

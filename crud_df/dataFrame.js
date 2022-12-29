@@ -116,3 +116,20 @@ function Delete(){
     } 
 }
 
+
+
+function Copytext(e){
+    navigator.clipboard.writeText(e.innerText);
+    ShowTost()
+}
+
+
+// snack tost JS
+
+function ShowTost(e) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+ 
+ 

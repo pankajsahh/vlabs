@@ -27,7 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
-
+<!-- icons bootstrap -->
 <body>
     <header>
         <div class="logo"><img class="logo" src="/images/logo.png"></div>
@@ -123,8 +123,9 @@
                             There are many ways to add rows in a data frame out of which we detail three different
                             methods below::</p>
                         <h4>Sample DataFrame:</h4>
-                        <div class="code_view">
-                            <pre><code class="python">import pandas as pd
+                        <div id="snackbar">Text Copied</div>
+                        <div class="code_view" onclick="Copytext(this)">
+                            <pre><code class="python" >import pandas as pd
 info= { "Num":[12,14,13,12,14,13,15],"NAME":['John','Camili','Rheana','Joseph','Amanti','Alexa','Siri']}
 data = pd.DataFrame(info)<br>print("Original Data frame:\n")<br>print(data)
                            
@@ -139,9 +140,9 @@ data = pd.DataFrame(info)<br>print("Original Data frame:\n")<br>print(data)
                             gives the total number of rows in the data frame. <br> Syntax: <br>
 
                         </p>
-                        <div class="code_view">
+                        <div class="code_view"  onclick="Copytext(this)">
                             <pre><code class="python">dataFrame.loc[len(dataFramef.index)]=' values '</code></pre>
-                        </div> Example: <div class="code_view">
+                        </div> Example: <div class="code_view"  onclick="Copytext(this)">
                             <pre><code class="python">dataFrame.loc[len(dataFrame.index)] = [ 18 , 'Amit'] </code></pre>
                         </div>
 
@@ -161,13 +162,13 @@ data = pd.DataFrame(info)<br>print("Original Data frame:\n")<br>print(data)
                         </p>
 
                         Syntax :
-                        <div class="code_view">
+                        <div class="code_view"  onclick="Copytext(this)">
                             <pre><code class="python"> DataFrame.drop(labels=None, axis=0, index=None, columns=None,level=None, inplace=False,errors='raise')</code></pre>
                         </div>
                         Example :
 
 
-                        <div class="code_view">
+                        <div class="code_view"   onclick="Copytext(this)">
                             <pre><code class="python">
     data = data.drop(columns="anyName")  
     data = data.drop(columns=["anyName","anyOtherName"])
@@ -193,13 +194,13 @@ data = pd.DataFrame(info)<br>print("Original Data frame:\n")<br>print(data)
                             element
                             in a data frame at a time .
                             <br> Syntax: <br>
-                            <div class="code_view">
+                            <div class="code_view"  onclick="Copytext(this)">
                                 <pre><code class="python">dataframe.at[index,'column-name']='new value' 
                           </code></pre>
 
                             </div>
                             Example:
-                            <div class="code_view">
+                            <div class="code_view"  onclick="Copytext(this)">
                                 <pre><code class="python">df.at['Row1',,'Name']='Siya Agarwal' <br>df.at['Row2', 'Name']='Nilesh Pandey'
 print(df)
                         </code></pre>
