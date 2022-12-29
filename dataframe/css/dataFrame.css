@@ -327,7 +327,7 @@ nav .boxq a img {
 }
 @media screen and (max-width: 800px) {
   .exp-heading {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     text-align: center;
   }
   img {
@@ -411,7 +411,6 @@ nav .boxq a img {
   box-shadow: 0 0 0 0px black, 0 0 0 2px #2196f3;
   z-index: -1;
   margin: 2% auto;
-  font-size: 1rem;
   text-align: center;
   width: 50%;
   border-collapse: collapse;
@@ -715,7 +714,7 @@ nav .boxq a img {
 #ques {
   border-radius: 10px;
   box-shadow: 0 0 4px 0 rgb(0, 60, 128);
-
+padding: 5px 8px;
   margin: 0;
   color: rgb(2, 36, 68);
 }

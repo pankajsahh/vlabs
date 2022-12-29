@@ -201,9 +201,13 @@ nav .boxq a img {
     .container > .box {
         font-size: 0.7rem;
     }
-    .python {
+    .language-cpp{
+        height: auto;
+        width: 70vw;
+    }
+    .python{
         width: 250px;
-      }
+    }
 }
 .cont {
     display: flex;
@@ -258,7 +262,6 @@ nav .boxq a img {
     box-shadow: 0 0 0 0px black,0 0 0 10px #2196f3;
     z-index: -1;
     margin: 2% auto;
-    font-size: 2rem;
     text-align: center;
     width: 50%;
     border-collapse: collapse;
@@ -291,7 +294,7 @@ nav .boxq a img {
    
     border-radius: 10px;
     box-shadow: 0px 0px  2px 1px rgb(145, 189, 240);
-  
+  padding: 5px 8px;
     color: rgb(2, 36, 68);
 }
 .opts{
