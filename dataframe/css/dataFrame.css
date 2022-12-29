@@ -337,8 +337,7 @@ nav .boxq a img {
     height: 170px;
     width: 250px;
   }
-  .language-cpp {
-    height: auto;
+  .python {
     width: 70vw;
   }
   .container > .box {
@@ -714,7 +713,6 @@ nav .boxq a img {
   gap: 15px;
 }
 #ques {
-  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 4px 0 rgb(0, 60, 128);
 

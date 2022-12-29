@@ -193,17 +193,13 @@ nav .boxq a img {
     height: 400px;
     width: 600px;
 }
-@media screen and (max-width:768px) {
-    .obsv-image{
-        height: 170px;
-        width: 250px;
-    }
+@media screen and (max-width:708px) {
+  
     .container > .box {
         font-size: 0.7rem;
     }
-    .language-cpp{
-        height: auto;
-        width: 70vw;
+    .python{
+        width: 250px;
     }
 }
 .cont {
@@ -343,13 +339,13 @@ min-width: 120px;
 }
 
 .quiz_head{
-    padding: 2rem;
+ 
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 #ques{
-    padding: 1rem;
+
     border-radius: 10px;
     box-shadow: 0px 0px  4px 0 rgb(0, 60, 128);
     margin: 0;
@@ -557,3 +553,7 @@ button:hover{
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
+  pre {
+    white-space: pre-line;
+    word-wrap: break-word;
+}
