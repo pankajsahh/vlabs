@@ -201,10 +201,9 @@ nav .boxq a img {
     .container > .box {
         font-size: 0.7rem;
     }
-    .language-cpp{
-        height: auto;
-        width: 70vw;
-    }
+    .python {
+        width: 250px;
+      }
 }
 .cont {
     display: flex;
