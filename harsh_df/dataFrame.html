@@ -3,14 +3,16 @@
 
 <head>
 
-     <!-- setting colour in text  --> 
-     <script language="javascript" type="text/javascript" src="https://codemirror.net/lib/codemirror.js"></script>
-     <script language="javascript" type="text/javascript" src="https://codemirror.net/mode/perl/perl.js"></script>
-     
-     <link rel="stylesheet" type="text/css" href="https://codemirror.net/lib/codemirror.css"></link>
-     <link rel="stylesheet" type="text/css" href="https://codemirror.net/theme/abbott.css"></link>
- 
-      <!-- ended here  -->
+    <!-- setting colour in text  -->
+    <script language="javascript" type="text/javascript" src="https://codemirror.net/lib/codemirror.js"></script>
+    <script language="javascript" type="text/javascript" src="https://codemirror.net/mode/perl/perl.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://codemirror.net/lib/codemirror.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="https://codemirror.net/theme/abbott.css">
+    </link>
+
+    <!-- ended here  -->
 
     <script src="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +22,11 @@
     <link rel="stylesheet" href="dataFrame.css" />
     <link rel="shortcut icon" href="/images/vlab-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.css">
+    <!-- python codes viewer -->
 
-           
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -101,7 +106,8 @@
                     <h2 class="heading">Aim</h2>
                 </div>
                 <div class="desc1">
-                    <p class="desc">To create an empty data frame and add new columns in it (prime number and its square)</p>
+                    <p class="desc">To create an empty data frame and add new columns in it (prime number and its
+                        square)</p>
                 </div>
             </div>
             <div class="box" id="theory">
@@ -129,7 +135,7 @@
                         <li>Can Perform Arithmetic operations on rows and columns
                         </li>
                     </ul><br>
-                    <h2>pandas.DataFrame         </h2>
+                    <h2>pandas.DataFrame </h2>
                     <h4>A pandas DataFrame can be created using the following constructor -
                     </h4>
                     <span>pandas.DataFrame( data, index, columns, dtype, copy)
@@ -137,68 +143,72 @@
                     <h4>The parameters of the constructor are as follows -
                     </h4>
                     <ol>
-                        <li>data:- data takes various forms like ndarray, series, map, lists, dict, constants and also another DataFrame.</li>
-                        <li>index:- For the row labels, the Index to be used for the resulting frame is Optional Default np.arange(n) if no index is passed.
+                        <li>data:- data takes various forms like ndarray, series, map, lists, dict, constants and also
+                            another DataFrame.</li>
+                        <li>index:- For the row labels, the Index to be used for the resulting frame is Optional Default
+                            np.arange(n) if no index is passed.
                         </li>
-                        <li>columns:- For column labels, the optional default syntax is - np.arange(n). This is only true if no index is passed.
+                        <li>columns:- For column labels, the optional default syntax is - np.arange(n). This is only
+                            true if no index is passed.
                         </li>
                         <li>Dtype:- Data type of each column.
                         </li>
-                        <li>copy:- This command  is used for copying of data, if the default is False.
+                        <li>copy:- This command is used for copying of data, if the default is False.
                         </li>
                     </ol><br>
                     <h2>Create an Empty DataFrame
                     </h2>
                     <span>A basic DataFrame, which can be created is an Empty Dataframe.
                     </span>
-                    <p class="code_view">import pandas as pd <br>
-                        df =pd.DataFrame() <br>
-                        print(df) <br>
-                        </p><br>
-                        <h2>Column Addition
-                        </h2>
-                        <span>We will understand this by adding  column to an existing data frame.</span>
-                        <p class="code_view">import pandas as pd <br>
-                            df =pd.DataFrame()<br>
-                             
-                            # Adding a column to an existing DataFrame<br>
-                            df['Rollno']=[1,2,3,4,5]<br>
-                            df['Name']=['Kunal','Ram','Sahil','Preeti','Raj']<br>
-                            print(df)<br>
-                            </p>
-                            <h3>output</h3>
-                            <table>
-                                <tr>
-                                  <th> </th>
-                                  <th>Rollno</th>
-                                  <th>Name</th>
-                                </tr>
-                                <tr>
-                                  <td>0</td>
-                                  <td>1</td>
-                                  <td>kunal</td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>2</td>
-                                  <td>Ram</td>
-                                </tr>
-                                <tr>
-                                  <td>2</td>
-                                  <td>3</td>
-                                  <td>sahil</td>
-                                </tr>
-                                <tr>
-                                  <td>3</td>
-                                  <td>4</td>
-                                  <td>preeti</td>
-                                </tr>
-                                <tr>
-                                  <td>4</td>
-                                  <td>5</td>
-                                  <td>Raj</td>
-                                </tr>
-                              </table> <br>
+                    <div class="code_view">
+                        <pre><code class="python">import pandas as pd
+df =pd.DataFrame()
+print(df)</code></pre>
+                    </div>
+                    <h2>Column Addition
+                    </h2>
+                    <span>We will understand this by adding column to an existing data frame.</span>
+                    <div class="code_view">
+                        <pre><code class="python">import pandas as pd <br>
+df =pd.DataFrame()
+# Adding a column to an existing DataFrame
+df['Rollno']=[1,2,3,4,5]
+df['Name']=['Kunal','Ram','Sahil','Preeti','Raj']
+print(df)</code> </pre>
+                    </div>
+                    <h3>output</h3>
+                    <table>
+                        <tr>
+                            <th> </th>
+                            <th>Rollno</th>
+                            <th>Name</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>kunal</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Ram</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>sahil</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>preeti</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>Raj</td>
+                        </tr>
+                    </table> <br>
                 </div>
             </div>
             <div class="box" id="procedure">
@@ -206,20 +216,21 @@
                     <h2 class="heading">Procedure</h2>
                 </div>
                 <div class="desc2">
-                <ol>
-                    <li>Press start to start the experiment 
-                    </li>
-                    <li>Press next to see the execution of the code
-                    </li>
-                    <li>Relevant line in the code is shown here
-                    </li>
-                    <li>The output of the code shown in the right
-                    </li>
-                </ol><br>
-                <h3>Manual</h3>
-                <span>In this experiment you will understand how to create a data frame and add columns to the data frame.<br>
-                </span>
-                
+                    <ol>
+                        <li>Press start to start the experiment
+                        </li>
+                        <li>Press next to see the execution of the code
+                        </li>
+                        <li>Relevant line in the code is shown here
+                        </li>
+                        <li>The output of the code shown in the right
+                        </li>
+                    </ol><br>
+                    <h3>Manual</h3>
+                    <span>In this experiment you will understand how to create a data frame and add columns to the data
+                        frame.<br>
+                    </span>
+
                 </div>
             </div>
             <div class="box" id="practice">
@@ -332,7 +343,7 @@
                 <br>
                 <div class="quiz_cont" id="quiz">
                     <div class="quiz_head">
-                        <h2 class="ques">Q1. Which of the following python libraries are used to create a dataframe:-
+                        <div class="ques">Q1. Which of the following python libraries are used to create a dataframe:-
                             <br><br>
 
                             <!-- &nbsp &nbsp import pandas as pd <br>
@@ -351,11 +362,12 @@
                                 </li>
 
                             </ul>
-                        </h2>
-                        <h2 class="ques"><br> Q2. Which of the following is the correct syntax to create an empty dataframe :-<br>
+                        </div>
+                        <div class="ques"><br> Q2. Which of the following is the correct syntax to create an empty
+                            dataframe :-<br>
                             <br>
                             <ul type="none" class="opts">
-                                <li  onclick="selected(this)" class="wrng-ans">
+                                <li onclick="selected(this)" class="wrng-ans">
                                     pd.dataframe(data)
                                 </li>
 
@@ -367,8 +379,8 @@
                                 </li>
 
                             </ul>
-                        </h2>
-                        <h2 class="ques"> <br> Q3. What is the correct syntax to add a column in a dataframe :-<br>
+                        </div>
+                        <div class="ques"> <br> Q3. What is the correct syntax to add a column in a dataframe :-<br>
                             <br>
                             <ul type="none" class="opts">
                                 <li onclick="selected(this)" class="rigt-ans">
@@ -383,94 +395,95 @@
                                 </li>
 
                             </ul>
-                        </h2>
-                        <h2 class="ques"><br>Q4. What is  the output of the following code:-
-                            <br>
-                            &nbsp &nbsp Df = pd.DataFrame() <br>
-                            &nbsp &nbsp  Df[“Numbers”] = np.arange(3)<br>
-                            &nbsp &nbsp Df[“Square”] = Df[“Numbers”]*Df[“Numbers”]<br>
-                            &nbsp &nbsp print(Df)
-                            <br>
+                        </div>
+                        <div class="ques"><br>Q4. What is the output of the following code:-
+                            <div class="code_view">
+                                <pre><code class="python">import pandas as pd
+Df = pd.DataFrame()
+Df["Numbers"] = np.arange(3)
+Df["Square"] = Df["Numbers"]*Df["Numbers"]
+print(Df)
+                        </code></pre></div><br>
                             <ul type="none" class="opts">
                                 <li onclick="selected(this)" class="rigt-ans">
-                                    <table >
+                                    <table>
                                         <tr>
-                                          <th> </th>
-                                          <th>Number</th>
-                                          <th>Square</th>
+                                            <th> </th>
+                                            <th>Number</th>
+                                            <th>Square</th>
                                         </tr>
                                         <tr>
-                                          <td>0</td>
-                                          <td>1</td>
-                                          <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
                                         </tr>
                                         <tr>
-                                          <td>1</td>
-                                          <td>2</td>
-                                          <td>4</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>4</td>
                                         </tr>
                                         <tr>
-                                          <td>2</td>
-                                          <td>3</td>
-                                          <td>9</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>9</td>
                                         </tr>
-                                      </table> 
+                                    </table>
                                 </li>
 
                                 <li onclick="selected(this)" class="wrng-ans">
                                     <table>
                                         <tr>
-                                          <th>Number</th>
-                                          <th>Square</th>
-                                          <th> </th>
+                                            <th>Number</th>
+                                            <th>Square</th>
+                                            <th> </th>
                                         </tr>
                                         <tr>
-                                          <td>0</td>
-                                          <td>1</td>
-                                          <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
                                         </tr>
                                         <tr>
-                                          <td>1</td>
-                                          <td>2</td>
-                                          <td>4</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>4</td>
                                         </tr>
                                         <tr>
-                                          <td>2</td>
-                                          <td>3</td>
-                                          <td>9</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>9</td>
                                         </tr>
-                                      </table> 
+                                    </table>
                                 </li>
 
 
                                 <li onclick="selected(this)" class="wrng-ans">
                                     <table>
                                         <tr>
-                                          <th>Square</th>
-                                          <th>Number</th>
-                                          <th> </th>
+                                            <th>Square</th>
+                                            <th>Number</th>
+                                            <th> </th>
                                         </tr>
                                         <tr>
-                                          <td>0</td>
-                                          <td>1</td>
-                                          <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
                                         </tr>
                                         <tr>
-                                          <td>1</td>
-                                          <td>2</td>
-                                          <td>4</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>4</td>
                                         </tr>
                                         <tr>
-                                          <td>2</td>
-                                          <td>3</td>
-                                          <td>9</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>9</td>
                                         </tr>
-                                      </table> 
+                                    </table>
                                 </li>
 
                             </ul>
-                        </h2>
-                        <h2 class="ques"><br> Q5. We can use the __ method to merge two DataFrames <br>
+                        </div>
+                        <div class="ques"><br> Q5. We can use the __ method to merge two DataFrames <br>
 
 
                             <br>
@@ -489,7 +502,7 @@
                                 </li>
 
                             </ol>
-                        </h2>
+                        </div>
 
                     </div>
 
@@ -509,27 +522,27 @@
         </div>
     </section>
     <script src="dataFrame.js"></script>
-    <script >
-         
+    <script>
+
         // simulation part 
 
-    // function to change the colour of the text area 
-    var editor = CodeMirror.fromTextArea(document.getElementById('codearea'), {
-    lineNumbers: true,
-    mode: 'text/x-perl',
-    theme: 'abbott',
-});
-// function ends here 
+        // function to change the colour of the text area 
+        var editor = CodeMirror.fromTextArea(document.getElementById('codearea'), {
+            lineNumbers: true,
+            mode: 'text/x-perl',
+            theme: 'abbott',
+        });
+        // function ends here 
 
-(async function (){return await output})().then(data => {
-    console.log(data);
-    
-},error => {
-    console.log(error);
-    throw error;
-});
-  
-    
+        (async function () { return await output })().then(data => {
+            console.log(data);
+
+        }, error => {
+            console.log(error);
+            throw error;
+        });
+
+
     </script>
 </body>
 

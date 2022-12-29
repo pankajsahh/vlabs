@@ -339,7 +339,7 @@ nav .boxq a img {
 .desc1 h4{
     padding:10px 20px;
 }
-.desc1 ul,span{
+.desc1>ul{
     padding: 0 40px;
 }
 .desc1 ol{
@@ -355,10 +355,8 @@ nav .boxq a img {
     padding-left: 20px;
 }
 .code_view{
-    display: block;
-    background-color: #71adbbca;
-    border: 1px solid #012d37;
-    padding: 13px;
+    border: 1px dashed black;
+    margin: 0 20px;
 }
 
 
